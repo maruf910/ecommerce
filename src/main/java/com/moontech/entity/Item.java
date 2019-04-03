@@ -21,6 +21,7 @@ public class Item {
 	@Id
 	@GeneratedValue
 	private long id;
+	
 	@NotBlank
 	private String itemName;
 	@NotBlank
@@ -35,5 +36,23 @@ public class Item {
     @Temporal(TemporalType.TIMESTAMP)
     @LastModifiedDate
     private Date updatedAt;
+
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {
+		this.itemName = itemName;
+	}
+
+	public String getItemCategory() {
+		return itemCategory;
+	}
+
+	public void setItemCategory(String itemCategory) {
+		this.itemCategory = itemCategory;
+	}
+    
+    
 
 }
