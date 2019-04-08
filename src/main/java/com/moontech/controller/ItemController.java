@@ -14,7 +14,7 @@ import com.moontech.entity.Item;
 import com.moontech.service.ItemService;
 
 @RestController
-@RequestMapping(value = "/api")
+@RequestMapping(value = "/api/item")
 public class ItemController {
 	
 	@Autowired
